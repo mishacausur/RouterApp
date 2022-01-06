@@ -11,6 +11,12 @@
 		B684CE3627860DD400643D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3527860DD400643D60 /* ContentView.swift */; };
 		B684CE3827860DD600643D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3727860DD600643D60 /* Assets.xcassets */; };
 		B684CE3B27860DD600643D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3A27860DD600643D60 /* Preview Assets.xcassets */; };
+		B684CE432786E24D00643D60 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE422786E24D00643D60 /* CardModel.swift */; };
+		B684CE452787086F00643D60 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE442787086F00643D60 /* Router.swift */; };
+		B684CE4727871AAB00643D60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE4627871AAB00643D60 /* CardView.swift */; };
+		B684CE4A27871AEC00643D60 /* Routerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE4927871AEC00643D60 /* Routerable.swift */; };
+		B684CE4C27871AF500643D60 /* Routed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE4B27871AF500643D60 /* Routed.swift */; };
+		B684CE4E27871B2F00643D60 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE4D27871B2F00643D60 /* Events.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B684CE3527860DD400643D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B684CE3727860DD600643D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B684CE3A27860DD600643D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B684CE422786E24D00643D60 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		B684CE442787086F00643D60 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B684CE4627871AAB00643D60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B684CE4927871AEC00643D60 /* Routerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routerable.swift; sourceTree = "<group>"; };
+		B684CE4B27871AF500643D60 /* Routed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routed.swift; sourceTree = "<group>"; };
+		B684CE4D27871B2F00643D60 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +63,10 @@
 		B684CE3227860DD400643D60 /* RealtyEstate */ = {
 			isa = PBXGroup;
 			children = (
+				B684CE4F27871B3E00643D60 /* Views */,
+				B684CE412786E23700643D60 /* DataModels */,
 				B684CE3327860DD400643D60 /* RealtyEstateApp.swift */,
+				B684CE4827871ADD00643D60 /* Router */,
 				B684CE3527860DD400643D60 /* ContentView.swift */,
 				B684CE3727860DD600643D60 /* Assets.xcassets */,
 				B684CE3927860DD600643D60 /* Preview Content */,
@@ -65,6 +80,33 @@
 				B684CE3A27860DD600643D60 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B684CE412786E23700643D60 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B684CE422786E24D00643D60 /* CardModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		B684CE4827871ADD00643D60 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B684CE442787086F00643D60 /* Router.swift */,
+				B684CE4D27871B2F00643D60 /* Events.swift */,
+				B684CE4927871AEC00643D60 /* Routerable.swift */,
+				B684CE4B27871AF500643D60 /* Routed.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B684CE4F27871B3E00643D60 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B684CE4627871AAB00643D60 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B684CE452787086F00643D60 /* Router.swift in Sources */,
 				B684CE3627860DD400643D60 /* ContentView.swift in Sources */,
+				B684CE432786E24D00643D60 /* CardModel.swift in Sources */,
+				B684CE4C27871AF500643D60 /* Routed.swift in Sources */,
+				B684CE4E27871B2F00643D60 /* Events.swift in Sources */,
 				B684CE3427860DD400643D60 /* RealtyEstateApp.swift in Sources */,
+				B684CE4A27871AEC00643D60 /* Routerable.swift in Sources */,
+				B684CE4727871AAB00643D60 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

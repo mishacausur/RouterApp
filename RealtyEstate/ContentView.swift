@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    var items = ["1", "2", "3"]
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(items, id: \.self) { i in
+                Router.eventOccured(with: .toCardView(i)) {
+                    Text(i)
+                }
+                .navigationTitle("YYY")
+            }
+        }
     }
 }
 
