@@ -10,7 +10,10 @@ import SwiftUI
 struct DetailsView: View {
     var item = Item.items[0]
     var body: some View {
-        Text(item.name)
+        VStack {
+            Text(item.name)
+            Text(item.description)
+        }
     }
 }
 
