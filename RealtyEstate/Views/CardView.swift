@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct CardView: View {
-    var title: String
+    var item: CategoriesData = CategoriesData.categories[0]
     var body: some View {
-        Text(title)
+        VStack(alignment: .leading) {
+            Image(item.image)
+            Text(item.name)
+                .font(.body.bold())
+                .foregroundColor(Color("textPrimary"))
+                .frame(alignment: .leading)
+                .padding(.leading, 12)
+                .padding(.top, 4)
+            Text("(\(item.count))")
+                .frame(alignment: .leading)
+                .foregroundColor(Color("textSecondary"))
+                .font(.footnote)
+                .padding(.leading, 12)
+                .padding(.top, 4)
+            Spacer(minLength: 20)
+        }
+        .background(
+            RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Color.white)
+                .shadow(radius: 4)
+        )
     }
 }
 
-struct CardView_Preview: PreviewProvider {
+
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(title: "1")
+        CardView()
     }
 }

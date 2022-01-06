@@ -8,5 +8,5 @@
 import Foundation
 
 protocol Routed {
-    var router: Router { get }
+//    var router: Router { get }
 }

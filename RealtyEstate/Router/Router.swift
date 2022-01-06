@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct Router: Routerable {
+//struct Router: Routerable {
     
-    static func eventOccured<T>(with event: Events,content: () -> T) -> AnyView where T : View {
-        switch event {
-        case .toCardView(let string):
-            return AnyView(NavigationLink(destination: CardView(title: string), label: {
-                content()
-            }))
-        }
-    }
-}
+//    static func eventOccured<T>(with event: Events,content: () -> T) -> AnyView where T : View {
+//        switch event {
+//        case .toCardView(let string):
+//            return AnyView(NavigationLink(destination: Categories(text: string), label: {
+//                content()
+//            }))
+//        }
+//    }
+//}

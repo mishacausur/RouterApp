@@ -8,6 +8,6 @@
 import Foundation
 import SwiftUI
 
-protocol Routerable {
-    static func eventOccured<T: View>(with event: Events, content: () -> T) -> AnyView
-}
+//protocol Routerable {
+//    static func eventOccured<T: View>(with event: Events, content: () -> T) -> AnyView
+//}

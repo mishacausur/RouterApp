@@ -8,63 +8,69 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var text = "TEST"
+    @State var toOrder = false
     var body: some View {
-        VStack {
-            Spacer()
+        NavigationView {
             VStack {
-                Circle().fill(Color.white)
-                    .frame(width: 104)
-                    .overlay {
-                        Image("boxIcon")
+                Spacer()
+                VStack {
+                    Circle().fill(Color.white)
+                        .frame(width: 104)
+                        .overlay {
+                            Image("boxIcon")
+                        }
+                        .padding(.top, 40)
+                        .padding(.top, 45.0)
+                    Text("Non-Contact \nDeliveries")
+                        .font(.title.bold())
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color("textPrimary"))
+                        .padding(.top, 24)
+                    Text("When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.")
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color("textSecondary"))
+                        .padding(.all, 20.0)
+                    NavigationLink {
+                        CategoriesView()
+                            .navigationBarHidden(true)
+                    } label: {
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(Color("primaryButton"))
+                            .frame(height: 56)
+                            .overlay {
+                                Text("Order Now".uppercased())
+                                    .font(.footnote.bold())
+                                    .foregroundColor(.white)
+                            }
                     }
-                    .padding(.top, 40)
-                    .padding(.top, 45.0)
-                Text("Non-Contact \nDeliveries")
-                    .font(.title.bold())
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color("textPrimary"))
-                    .padding(.top, 24)
-                Text("When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.")
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color("textSecondary"))
-                    .padding(.all, 20.0)
+                    .padding(.bottom, 13)
+                    .padding(.horizontal, 10)
+                    Button {exit(0) } label: {
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .fill(Color("backLight"))
+                            .frame(height: 56)
+                            .overlay {
+                                Text("Dismiss".uppercased())
+                                    .foregroundColor(Color("textSecondary"))
+                                    .font(.footnote.bold())
+                            }
+                    }
+                    .padding(.bottom, 24)
+                    .padding(.horizontal, 10)
                     
-                Button {
-                    
-                } label: {
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(Color("primaryButton"))
-                        .frame(height: 56)
-                        .overlay {
-                            Text("Order Now".uppercased())
-                                .font(.footnote.bold())
-                                .foregroundColor(.white)
-                        }
                 }
-                .padding(.bottom, 13)
-                .padding(.horizontal, 10)
-                Button { } label: {
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(Color("backLight"))
-                        .frame(height: 56)
-                        .overlay {
-                            Text("Dismiss".uppercased())
-                                .foregroundColor(Color("textSecondary"))
-                                .font(.footnote.bold())
-                        }
-                }
-                .padding(.bottom, 24)
-                .padding(.horizontal, 10)
-                
+                .frame(maxWidth: .infinity)
+                .frame(height: 564)
+                .background(
+                    RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color("backLight")))
+            
             }
-            .frame(maxWidth: .infinity)
-            .frame(height: 564)
             .background(
-                RoundedRectangle(cornerRadius: 25, style: .continuous).fill(Color("backLight")))
+                Image("background 1"))
+            .ignoresSafeArea()
+            
         }
-        .background(
-            Image("background 1"))
-        .ignoresSafeArea()
     }
 }
 
