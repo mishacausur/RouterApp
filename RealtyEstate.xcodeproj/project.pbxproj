@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B684CE3427860DD400643D60 /* RealtyEstateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3327860DD400643D60 /* RealtyEstateApp.swift */; };
+		B684CE3427860DD400643D60 /* Foodnodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3327860DD400643D60 /* Foodnodes.swift */; };
 		B684CE3627860DD400643D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3527860DD400643D60 /* ContentView.swift */; };
 		B684CE3827860DD600643D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3727860DD600643D60 /* Assets.xcassets */; };
 		B684CE3B27860DD600643D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3A27860DD600643D60 /* Preview Assets.xcassets */; };
@@ -29,8 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B684CE3027860DD400643D60 /* RealtyEstate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtyEstate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B684CE3327860DD400643D60 /* RealtyEstateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtyEstateApp.swift; sourceTree = "<group>"; };
+		B684CE3027860DD400643D60 /* Foodnodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodnodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B684CE3327860DD400643D60 /* Foodnodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodnodes.swift; sourceTree = "<group>"; };
 		B684CE3527860DD400643D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B684CE3727860DD600643D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B684CE3A27860DD600643D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		B684CE2727860DD400643D60 = {
 			isa = PBXGroup;
 			children = (
-				B684CE3227860DD400643D60 /* RealtyEstate */,
+				B684CE3227860DD400643D60 /* Foodnodes */,
 				B684CE3127860DD400643D60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,24 +73,24 @@
 		B684CE3127860DD400643D60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B684CE3027860DD400643D60 /* RealtyEstate.app */,
+				B684CE3027860DD400643D60 /* Foodnodes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B684CE3227860DD400643D60 /* RealtyEstate */ = {
+		B684CE3227860DD400643D60 /* Foodnodes */ = {
 			isa = PBXGroup;
 			children = (
 				B684CE56278756B500643D60 /* Styles */,
 				B684CE4F27871B3E00643D60 /* Views */,
 				B684CE412786E23700643D60 /* DataModels */,
-				B684CE3327860DD400643D60 /* RealtyEstateApp.swift */,
+				B684CE3327860DD400643D60 /* Foodnodes.swift */,
 				B684CE4827871ADD00643D60 /* Router */,
 				B684CE3527860DD400643D60 /* ContentView.swift */,
 				B684CE3727860DD600643D60 /* Assets.xcassets */,
 				B684CE3927860DD600643D60 /* Preview Content */,
 			);
-			path = RealtyEstate;
+			path = Foodnodes;
 			sourceTree = "<group>";
 		};
 		B684CE3927860DD600643D60 /* Preview Content */ = {
@@ -161,7 +161,7 @@
 			);
 			name = RealtyEstate;
 			productName = RealtyEstate;
-			productReference = B684CE3027860DD400643D60 /* RealtyEstate.app */;
+			productReference = B684CE3027860DD400643D60 /* Foodnodes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 				B684CE4E27871B2F00643D60 /* Events.swift in Sources */,
 				B684CE5A2787791700643D60 /* ItemsView.swift in Sources */,
 				B684CE58278756C500643D60 /* FontAnimator.swift in Sources */,
-				B684CE3427860DD400643D60 /* RealtyEstateApp.swift in Sources */,
+				B684CE3427860DD400643D60 /* Foodnodes.swift in Sources */,
 				B684CE5327874D3B00643D60 /* CategoriesData.swift in Sources */,
 				B684CE4A27871AEC00643D60 /* Routerable.swift in Sources */,
 			);
@@ -360,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RealtyEstate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Foodnodes/Preview Content\"";
 				DEVELOPMENT_TEAM = JKYU7W8LBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -374,8 +374,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mishacausur.RealtyEstate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mishacausur.-Foodnodes";
+				PRODUCT_NAME = Foodnodes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +389,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RealtyEstate/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Foodnodes/Preview Content\"";
 				DEVELOPMENT_TEAM = JKYU7W8LBP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -403,8 +403,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mishacausur.RealtyEstate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "mishacausur.-Foodnodes";
+				PRODUCT_NAME = Foodnodes;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
