@@ -28,7 +28,7 @@ struct CardView: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 15, style: .continuous).fill(Color.white)
-                .shadow(radius: 4)
+                .shadow(radius: 8, x: 0, y: 4)
         )
     }
 }
