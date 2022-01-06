@@ -23,7 +23,6 @@ struct ItemsView: View {
                         }
                     }
                     .padding(.top, 180)
-                   
                 } 
                 
                 .background(Color("backLight"))
