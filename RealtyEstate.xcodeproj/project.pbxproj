@@ -19,6 +19,7 @@
 		B684CE5127873C1400643D60 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE5027873C1400643D60 /* CategoriesView.swift */; };
 		B684CE5327874D3B00643D60 /* CategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE5227874D3B00643D60 /* CategoriesData.swift */; };
 		B684CE552787542F00643D60 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE542787542F00643D60 /* CardView.swift */; };
+		B684CE58278756C500643D60 /* FontAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE57278756C500643D60 /* FontAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B684CE5027873C1400643D60 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		B684CE5227874D3B00643D60 /* CategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesData.swift; sourceTree = "<group>"; };
 		B684CE542787542F00643D60 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B684CE57278756C500643D60 /* FontAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		B684CE3227860DD400643D60 /* RealtyEstate */ = {
 			isa = PBXGroup;
 			children = (
+				B684CE56278756B500643D60 /* Styles */,
 				B684CE4F27871B3E00643D60 /* Views */,
 				B684CE412786E23700643D60 /* DataModels */,
 				B684CE3327860DD400643D60 /* RealtyEstateApp.swift */,
@@ -113,6 +116,14 @@
 				B684CE542787542F00643D60 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B684CE56278756B500643D60 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B684CE57278756C500643D60 /* FontAnimator.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				B684CE552787542F00643D60 /* CardView.swift in Sources */,
 				B684CE4C27871AF500643D60 /* Routed.swift in Sources */,
 				B684CE4E27871B2F00643D60 /* Events.swift in Sources */,
+				B684CE58278756C500643D60 /* FontAnimator.swift in Sources */,
 				B684CE3427860DD400643D60 /* RealtyEstateApp.swift in Sources */,
 				B684CE5327874D3B00643D60 /* CategoriesData.swift in Sources */,
 				B684CE4A27871AEC00643D60 /* Routerable.swift in Sources */,
