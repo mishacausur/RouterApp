@@ -16,19 +16,16 @@ struct ItemsView: View {
             ZStack {
                 ScrollView {
                     scrollDetection
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 130), spacing: 18)], spacing: 12) {
-                        ForEach(CategoriesData.categories) { item in
-                            NavigationLink(destination: Text("\(item.name)")) {
-                                CardView(item: item)
-                                    .padding()
-                            }
-                            
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 280), spacing: 12)], spacing: 32) {
+                        ForEach(Item.items) { item in
+                            ItemView(item: item)
+                                .padding(.bottom, 32)
                         }
-                        
                     }
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 160)
-                }
+                    .padding(.top, 180)
+                   
+                } 
+                
                 .background(Color("backLight"))
                 .navigationBarHidden(true)
             }
@@ -45,11 +42,12 @@ struct ItemsView: View {
     
     var scrollDetection: some View {
            GeometryReader { proxy in
+//               Text("\(proxy.frame(in: .named("scroll")).minY)")
                Color.clear.preference(key: ScrollHeight.self, value: proxy.frame(in: .named("scroll")).minY)
            }
            .onPreferenceChange(ScrollHeight.self) { value in
                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                   if value < 50 {
+                   if value < 0 {
                        isScrolled = true
                    } else {
                        isScrolled = false
@@ -62,7 +60,7 @@ struct ItemsView: View {
 
 struct ItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoriesView()
+        ItemsView(item: "Veggie")
     }
 }
 

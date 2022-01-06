@@ -24,6 +24,7 @@
 		B684CE5C2787797D00643D60 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE5B2787797D00643D60 /* NavigationBar.swift */; };
 		B684CE5E278779EA00643D60 /* ScrollHeightGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE5D278779EA00643D60 /* ScrollHeightGeometry.swift */; };
 		B684CE6027877B2B00643D60 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE5F27877B2B00643D60 /* ItemModel.swift */; };
+		B684CE622787852400643D60 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE612787852400643D60 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		B684CE5B2787797D00643D60 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B684CE5D278779EA00643D60 /* ScrollHeightGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollHeightGeometry.swift; sourceTree = "<group>"; };
 		B684CE5F27877B2B00643D60 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		B684CE612787852400643D60 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				B684CE5B2787797D00643D60 /* NavigationBar.swift */,
 				B684CE592787791700643D60 /* ItemsView.swift */,
 				B684CE542787542F00643D60 /* CardView.swift */,
+				B684CE612787852400643D60 /* ItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				B684CE6027877B2B00643D60 /* ItemModel.swift in Sources */,
 				B684CE452787086F00643D60 /* Router.swift in Sources */,
 				B684CE5127873C1400643D60 /* CategoriesView.swift in Sources */,
+				B684CE622787852400643D60 /* ItemView.swift in Sources */,
 				B684CE3627860DD400643D60 /* ContentView.swift in Sources */,
 				B684CE5E278779EA00643D60 /* ScrollHeightGeometry.swift in Sources */,
 				B684CE432786E24D00643D60 /* CardModel.swift in Sources */,

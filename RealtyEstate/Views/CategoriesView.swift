@@ -15,7 +15,19 @@ struct CategoriesView: View {
             ZStack {
                 ScrollView {
                     scrollDetection
-                   
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 130), spacing: 18)], spacing: 12) {
+                        ForEach(CategoriesData.categories) { item in
+                            NavigationLink(destination: ItemsView(item: item.name)
+                                            .navigationBarHidden(true)) {
+                                CardView(item: item)
+                                    .padding()
+                            }
+                            
+                        }
+                        
+                    }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 160)
                 }
                 .background(Color("backLight"))
                 .navigationBarHidden(true)
