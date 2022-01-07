@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailsView: View {
+    @Environment(\.dismiss) var dismiss
     var item = Item.items[0]
     var body: some View {
         ZStack {
@@ -18,6 +19,14 @@ struct DetailsView: View {
                 Spacer()
 
             }
+                    Image(systemName: "arrow.left")
+                        .onTapGesture {
+                            dismiss()
+                        }
+                        .foregroundColor(Color.white)
+                        .position(x: 12, y: 50)
+                    .padding()
+               
             RoundedRectangle(cornerRadius: 25, style: .continuous)
                 .fill(Color("backLight"))
                 .padding(.top, 250)
@@ -54,11 +63,35 @@ struct DetailsView: View {
                                     .foregroundColor(Color("textSecondary"))
                                     .padding(.horizontal)
                                     .lineSpacing(4)
+                                HStack {
+                                    RoundedRectangle(cornerRadius: 4, style: .continuous)
+                                        .stroke(
+                                            LinearGradient(colors: [Color("textSecondary")], startPoint: .topLeading, endPoint: .bottomTrailing))
+                                        .overlay(content: {
+                                            Image(systemName: "heart")
+                                                .font(.body.weight(.medium))
+                                                .foregroundColor(Color("textSecondary"))
+                                        })
+                                        .frame(width: 60 ,height: 40)
+                                    RoundedRectangle(cornerRadius: 4, style: .continuous)
+                                        .fill(Color("primaryButton"))
+                                        .frame(height: 40)
+                                        .overlay {
+                                            HStack {
+                                                Image(systemName: "cart")
+                                                    .foregroundColor(.white)
+                                                Text("Add to cart".uppercased())
+                                                    .font(.system(size: 14, weight: .bold, design: .default))
+                                                    .foregroundColor(.white)
+                                            }
+                                        }
+                                }
+                                .padding()
                             }
                     }
                     .padding(.top, 250)
                 }
-          
+            
         }
         .ignoresSafeArea()
     }
