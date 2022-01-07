@@ -18,8 +18,13 @@ struct ItemsView: View {
                     scrollDetection
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 280), spacing: 12)], spacing: 32) {
                         ForEach(Item.items) { item in
-                            ItemView(item: item)
-                                .padding(.bottom, 32)
+                            NavigationLink(destination: DetailsView()
+                                            .navigationBarHidden(true)
+                                            .navigationBarBackButtonHidden(true)){
+                                ItemView(item: item)
+                                    .padding(.bottom, 32)
+                            }
+                            
                         }
                     }
                     .padding(.top, 180)

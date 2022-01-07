@@ -49,6 +49,7 @@ struct ItemView: View {
                                 .foregroundColor(.white)
                         }
                 }
+                .background(Color.white)
             }
             .frame(maxWidth: .infinity)
             

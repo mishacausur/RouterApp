@@ -63,14 +63,16 @@ struct NavigationBar: View {
                         .matchedGeometryEffect(id: "glass", in: namespace)
                         .padding(.horizontal, 12)
                     Text("Search")
-                        .foregroundColor(.secondary)
+                        .foregroundColor(Color("textSecondary"))
                         .frame(alignment: .leading)
                     Spacer()
                 }
                 .padding(.vertical, 8)
+                .padding(.horizontal, 4)
                 .background(
                     RoundedRectangle(cornerRadius: 50, style: .continuous)
                         .fill(.white)
+                        .padding(.horizontal, 8)
                 )
                 .padding(.horizontal, 8)
                 .padding(.bottom, 12)

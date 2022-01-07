@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B684CE3427860DD400643D60 /* Foodnodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3327860DD400643D60 /* Foodnodes.swift */; };
+		B684CE3427860DD400643D60 /* FoodnodesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3327860DD400643D60 /* FoodnodesApp.swift */; };
 		B684CE3627860DD400643D60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B684CE3527860DD400643D60 /* ContentView.swift */; };
 		B684CE3827860DD600643D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3727860DD600643D60 /* Assets.xcassets */; };
 		B684CE3B27860DD600643D60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B684CE3A27860DD600643D60 /* Preview Assets.xcassets */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		B684CE3027860DD400643D60 /* Foodnodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodnodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B684CE3327860DD400643D60 /* Foodnodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foodnodes.swift; sourceTree = "<group>"; };
+		B684CE3327860DD400643D60 /* FoodnodesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodnodesApp.swift; sourceTree = "<group>"; };
 		B684CE3527860DD400643D60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B684CE3727860DD600643D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B684CE3A27860DD600643D60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -84,9 +84,9 @@
 				B684CE56278756B500643D60 /* Styles */,
 				B684CE4F27871B3E00643D60 /* Views */,
 				B684CE412786E23700643D60 /* DataModels */,
-				B684CE3327860DD400643D60 /* Foodnodes.swift */,
 				B684CE4827871ADD00643D60 /* Router */,
 				B684CE3527860DD400643D60 /* ContentView.swift */,
+				B684CE3327860DD400643D60 /* FoodnodesApp.swift */,
 				B684CE3727860DD600643D60 /* Assets.xcassets */,
 				B684CE3927860DD600643D60 /* Preview Content */,
 			);
@@ -228,7 +228,7 @@
 				B684CE4E27871B2F00643D60 /* Events.swift in Sources */,
 				B684CE5A2787791700643D60 /* ItemsView.swift in Sources */,
 				B684CE58278756C500643D60 /* FontAnimator.swift in Sources */,
-				B684CE3427860DD400643D60 /* Foodnodes.swift in Sources */,
+				B684CE3427860DD400643D60 /* FoodnodesApp.swift in Sources */,
 				B684CE5327874D3B00643D60 /* CategoriesData.swift in Sources */,
 				B684CE4A27871AEC00643D60 /* Routerable.swift in Sources */,
 			);
